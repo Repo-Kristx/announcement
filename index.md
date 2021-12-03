@@ -1,37 +1,144 @@
-## Welcome to GitHub Pages
+## 来瞅一眼！！！
 
-You can use the [editor on GitHub](https://github.com/Repo-Kristx/announcement/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+这是俺的 announcement 页面。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+`现在啥也没有`
 
-### Markdown
+> 没有你还瞅啥
+>
+> 你瞅 nm 呢
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+我就试试这玩意支持不支持 md 语法
 
-```markdown
-Syntax highlighted code block
+### 还搁这看呢？
 
-# Header 1
-## Header 2
-### Header 3
+真没啥好看的了，我刚看完数学题
 
-- Bulleted
-- List
+就 tm 一个数学题，**烦**死我了，<u>根本算不出来</u> $$ x $$ 是多少
 
-1. Numbered
-2. List
+$$ x^2 + \sin x = 0 $$
 
-**Bold** and _Italic_ and `Code` text
+这玩意*咋算你说说*，这不**离大谱**么
 
-[Link](url) and ![Image](src)
+### 你还看你还看，有啥好看的
+
+我还能给你变出来个鸡蛋不成）
+
+翻出来当年写的代码瞅瞅
+
+```c++
+// lambda0.cpp -- using lambda expressions
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <ctime>
+const long Size1 = 39L;
+const long Size2 = 100*Size1;
+const long Size3 = 100*Size2;
+
+bool f3(int x) {return x % 3 == 0;}
+bool f13(int x) {return x % 13 == 0;}
+
+int main()
+{
+    using std::cout;
+    std::vector<int> numbers(Size1);
+
+    std::srand(std::time(0));
+    std::generate(numbers.begin(), numbers.end(), std::rand);
+
+// using function pointers
+    cout << "Sample size = " << Size1 << '\n';
+
+    int count3 = std::count_if(numbers.begin(), numbers.end(), f3);
+    cout << "Count of numbers divisible by 3: " << count3 << '\n';
+    int count13 = std::count_if(numbers.begin(), numbers.end(), f13);
+    cout << "Count of numbers divisible by 13: " << count13 << "\n\n";
+
+// increase number of numbers
+    numbers.resize(Size2);
+    std::generate(numbers.begin(), numbers.end(), std::rand);
+    cout << "Sample size = " << Size2 << '\n';
+// using a functor
+    class f_mod
+    {
+    private:
+        int dv;
+    public:
+        f_mod(int d = 1) : dv(d) {}
+        bool operator()(int x) {return x % dv == 0;}
+    };
+
+    count3 = std::count_if(numbers.begin(), numbers.end(), f_mod(3));
+    cout << "Count of numbers divisible by 3: " << count3 << '\n';
+    count13 = std::count_if(numbers.begin(), numbers.end(), f_mod(13));
+    cout << "Count of numbers divisible by 13: " << count13 << "\n\n";
+
+// increase number of numbers again
+    numbers.resize(Size3);
+    std::generate(numbers.begin(), numbers.end(), std::rand);
+    cout << "Sample size = " << Size3 << '\n';
+// using lambdas
+    count3 = std::count_if(numbers.begin(), numbers.end(),
+             [](int x){return x % 3 == 0;});
+    cout << "Count of numbers divisible by 3: " << count3 << '\n';
+    count13 = std::count_if(numbers.begin(), numbers.end(),
+              [](int x){return x % 13 == 0;});
+    cout << "Count of numbers divisible by 13: " << count13 << '\n';
+
+    // std::cin.get();
+    return 0;
+}
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+有啥好看的真是
 
-### Jekyll Themes
+这我从那本<u>《C++ Primer Plus》</u>上**第18章**摘出来的代码，文件是叫 `lambda0.cpp` 。
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Repo-Kristx/announcement/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### 有什么好看的真是....
 
-### Support or Contact
+我给你放个美女图行不）
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+![the queen](https://cdn.akamai.steamstatic.com/steam/apps/1580050/ss_a7a0a8ee0861b02cd6d6fa7721a5ee3fe3a386e5.jpg)
+
+就问你：美不美？
+
+死亡细胞里边儿滴！22年Q1季度马上要出滴新 DLC！叫什么“ **the Queen and the Sea** ”，霸气侧漏的女王！
+
+<div style="color:blueviolet">
+	<b>なんてハンサム！！！！</b>
+</div>
+
+#### 笑死
+
+1. 别往下看啦....
+   + 没意思哒...
+2. 焯！
+
++ 有病病是不是！！！！
+
+我看看还差啥没试过...
+
+哦，表格格
+
+什么？
+
+哦
+
+|    因素    |                         原因                         |
+| :--------: | :--------------------------------------------------: |
+|    粒度    |                    矿石颗粒的粗细                    |
+| 矿浆液固比 |                接触面积，保证反应进行                |
+|    酸度    |             影响 $$ UO_2^{2+} $$ 的生成              |
+|   氧化剂   | 将矿石中的 $$ UO_2(IV) $$ 氧化至 $$ UO_2^{2+}(VI) $$ |
+|    温度    |                       加速反应                       |
+|    时间    |                      增加浸出率                      |
+
+md 懒得改了
+
+就这吧，
+
+---
+
+<div style="color:pink"> seyane ~ </div>
