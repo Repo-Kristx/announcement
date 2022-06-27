@@ -1,3 +1,6 @@
+math:true
+---
+
 ## 来瞅一眼！！！
 
 这是俺的 announcement 页面。
