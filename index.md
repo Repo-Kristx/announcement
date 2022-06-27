@@ -1,5 +1,8 @@
 ---
-math:true
+title: Announcement
+author: RepoXu
+math: true
+mermaid: true
 ---
 
 ## 来瞅一眼！！！
